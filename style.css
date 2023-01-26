@@ -1,0 +1,223 @@
+html {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+}
+body {
+    background-image: url(images/bg-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-color: #efefef;;
+}
+
+.hederi {
+    position: relative;
+}
+
+.circles {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    margin-top: 100px;
+}
+.hederi h1 {
+    text-align: center;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    margin-top: 137px;
+    font-size: 29px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    width: 100%;
+}
+
+.hederi p {
+    text-align: center;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    margin-top: 172px;
+    font-size: 17px;
+    color: #939191;
+    width: 100%;
+}
+
+.main {
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 37px;
+    border-radius: 12px;
+}
+.main.active {
+    display: none;
+}
+.box div div {
+    font-size: 30px;
+}
+.box div div span {
+    font-size: 14px;
+}
+.upper-div {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    align-items: center;
+
+}
+
+    
+#range {
+    width: 100%;
+    appearance: none;
+    background-color: rgb(47, 230, 230);
+    border-radius: 8px;
+    height: 6px;
+}
+.myrange::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 35px;
+    height: 35px;
+    background-color: rgb(49, 228, 189);
+    border-radius: 50%;
+    background-image: url(images/icon-slider.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    cursor: pointer;
+}
+
+.checkbox-div {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.discount {
+    font-size: 11px;
+    color: #e3c11d;
+    background-color: #a78f0f;
+    border-radius: 10px;
+    padding: 1px;
+}
+
+.bottom-div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.bottom-left {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    line-height: 21px;
+}
+
+.btn {
+    color: white;
+    border: none;
+    width: 146px;
+    background-color: #1010b1;
+    padding: 10px;
+    border-radius: 18px;
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+}
+
+.discount2 {
+    display: none;
+}
+
+.thankyou-div {
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 37px;
+    border-radius: 12px;
+    display: none;
+}
+.thankyou-div.active {
+    display: block;
+}
+.p1 {
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.p2 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.go-back {
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    color: red;
+}
+.dollar {
+    margin-right: -7px;
+}
+
+@media (max-width: 500px) {
+    .main {
+        max-width: 320px;
+    }
+    .hederi p {
+        top: 30px;
+    }
+    .bottom-div {
+        flex-direction: column;
+    }
+    .btn-div {
+        margin-top: 20px;
+    }
+    .discount2 {
+        display: inline-block;
+        font-size: 11px;
+        color: #e3c11d;
+        background-color: #a78f0f;
+        border-radius: 10px;
+        padding: 1px;
+    }
+    .discount {
+        display: none;
+    }
+    .price {
+        font-size: 30px;
+        position: absolute;
+        top: 103px;
+        left: 50%;
+        transform: translate(-50%);
+        display: flex;
+        align-items: center;
+    }
+    .price span:nth-child(1) {
+        margin-right: 1px;
+    }
+    .checkbox-div {
+        margin-top: 60px;
+    }
+    .thankyou-div {
+        width: 320px;
+    }
+    .dollar {
+        margin-right: 0;
+    }
+
+}

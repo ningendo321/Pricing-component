@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&family=Open+Sans&family=Rubik:wght@300&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <title>Pricing component</title>
+</head>
+<body>
+    
+    <header class="hederi">
+        <img class="circles" src="images/pattern-circles.svg" alt="circles">
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sing-up for our 30 day trial. No credit card required</p>
+    </header>
+    <div class="main">
+        <div class="box">
+            <div class="upper-div">
+                <p>100k PAGEVIEWS</p>
+                <div class="price">
+                   <span class="dollar" style="font-size: 30px;">$</span>
+                    <span class="thePrice" style="font-size: 30px;">16</span>
+                    <span style="font-size: 30px;">.00</span>
+                    <span class="month"> / month</span> 
+                </div>
+               
+            </div>
+
+            <input class="myrange" type="range" min="1" max="5" step="1" value="3" name="range" id="range">
+            <div class="hidden">
+                <span class="dollar" style="font-size: 30px; margin-right: 1px;">$</span>
+                 <span class="thePrice" style="font-size: 30px;">16</span>
+                 <span style="font-size: 30px;">.00</span>
+                 <span class="month"> / month</span> 
+            </div>
+
+        </div>
+        
+        <div class="checkbox-div">
+            <span style="font-size: 13px">Monthly Billing</span>
+            <label class="switch" for="switch">
+                <input class="checkInput" type="checkbox" name="switch">
+                
+            </label>
+            <span style="font-size: 13px">yearly billing</span>
+            <span class="discount">25% discount</span>
+            <span class="discount2">-25%</span>
+        </div>
+        <hr>
+        <div class="bottom-div">
+            <div class="bottom-left">
+                <div><img src="images/icon-check.svg" alt="check">
+                <span>Unlimited websites</span></div>
+                <div><img src="images/icon-check.svg" alt="check">
+                <span>100% data ownership</span></div>
+                <div><img src="images/icon-check.svg" alt="check">
+                <span>Email repors</span></div>
+                
+            </div>
+            <div class="btn-div">
+                <button class="btn">Start my trial</button>
+            </div>
+        </div>
+        
+    </div>
+    <div class="thankyou-div">
+                <p class="p1">Congrats !</p>
+                <p class="p2">You just activated trial</p>
+                <p class="go-back">go back</p>
+            </div>
+    <script src="index.js"></script>
+</body>
+</html>
